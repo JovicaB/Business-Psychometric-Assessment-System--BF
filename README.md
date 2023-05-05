@@ -15,7 +15,7 @@ Getting started with the Business-Psychometric Assessment System is easy. Simply
 
 ## How to Contribute
 
-We welcome contributions from users who have experience with work psychology assessment tools. If you hold a license for a proven-effective instrument, or if the instrument is free to use, you can contribute to this project by providing feedback and insights to help us improve our offerings.
+We welcome contributions from users who have experience with work psychology assessment tools. If you hold a license for a proven-effective instrument, or if the instrument is free to use. You can also contribute to this project by providing feedback and insights to help us improve our offerings.
 
 ## Known Issues and Limitations
 
