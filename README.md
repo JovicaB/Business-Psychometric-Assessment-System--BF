@@ -11,7 +11,7 @@ Built using Python/Flask/JS and MySQL technologies, this system offers a range o
 
 ## Getting Started
 
-Getting started with the Business-Psychometric Assessment System is easy. Simply log in using your Google account and gain access to a range of psychological diagnostic instruments for free. With this system, you can gain deep insights into employee behavior, motivation, and areas for development, all with the aim of improving team dynamics and productivity.
+Getting started with the Business-Psychometric Assessment System is easy. Simply log in using your Google account and gain access to a wide range of psychological diagnostic instruments for free. With this system, you can gain deep insights into employee behavior, motivation, and areas for development, all with the aim of improving team dynamics and productivity.
 
 ## How to Contribute
 
