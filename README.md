@@ -9,14 +9,13 @@ Built using Python/Flask/JS and MySQL technologies, this system offers a range o
     Free use of the offered psychological diagnostic instruments
 
 ## Getting Started
-Users can log in via a Google account and use the offered psychological diagnostic instruments
-for free.
+
+Getting started with the Business-Psychometric Assessment System is easy. Simply log in using your Google account and gain access to a range of psychological diagnostic instruments for free. With this system, you can gain deep insights into employee behavior, motivation, and areas for development, all with the aim of improving team dynamics and productivity.
 
 ## How to Contribute
-Users can contribute to the project by providing instruments that have proven to be effective
-based on their experience with work psychology assessment tools, provided that they hold a
-license for those instruments or they are free.
 
-## Known Issues or Limitations
-The project is in its initial development phase and is limited to the psychological instrument for
-job satisfaction assessment, specifically its diagnostic part.
+We welcome contributions from users who have experience with work psychology assessment tools. If you hold a license for a proven-effective instrument, or if the instrument is free to use, you can contribute to this project by providing feedback and insights to help us improve our offerings.
+
+## Known Issues and Limitations
+
+Please note that the Business-Psychometric Assessment System is in its initial development phase and is currently limited to the psychological instrument for job satisfaction assessment (specifically its diagnostic part), MBTI personality test and PCL-R Psychopathy Checklist (revised). We are continuously working to expand our offerings and improve the system, and welcome your feedback and suggestions.
