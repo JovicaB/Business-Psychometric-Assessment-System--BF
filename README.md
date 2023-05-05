@@ -4,8 +4,10 @@ The Business-Psychological Assessment System utilizes psychological assessment t
 ## Key Features
 
 Built using Python/Flask/JS and MySQL technologies, this system offers a range of features to help teams maximize their potential:
-•	Logging in via a Google account
-•	Free use of the offered psychological diagnostic instruments
+
+- Logging in via a Google account
+- Free use of the offered psychological diagnostic instruments
+
 
 ## Getting Started
 
