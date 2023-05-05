@@ -19,4 +19,5 @@ We welcome contributions from users who have experience with work psychology ass
 
 ## Known Issues and Limitations
 
-Please note that the Business-Psychometric Assessment System is in its initial development phase and is currently limited to the psychological instrument for job satisfaction assessment (specifically its diagnostic part), MBTI personality test and PCL-R Psychopathy Checklist (revised). We are continuously working to expand our offerings and improve the system, and welcome your feedback and suggestions.
+Please note that the Business-Psychometric Assessment System is in its initial development phase and is currently limited to the psychological instrument for job satisfaction assessment (specifically its diagnostic part), MBTI personality test and PCL-R Psychopathy Checklist (revised). We are continuously working to expand our offerings and improve the system, and welcome your feedback and suggestions. 
+Please be aware that the Alpha version of our application currently offers the diagnostic portion of our tests, with a minimal interpretation. We are actively working on expanding our offerings and enhancing the system.
