@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='visual/ico/star.ico') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/PP_1/PP_1-style.css') }}">
+  <title>[JSQ] rezultati</title>
+</head>
+
+<body>
+  <div class="header">
+    <p id="main_title">UPITNIK ZA PROCENU ZADOVOLJSTVA POSLOM</p>
+    <p id="sub_title">REZULTATI PROCENE</p>
+    <div class="header_line"></div>
+  </div>
+  <div class="explanation" id="explanation">
+    <p>Rezultati su prikazani grafički (bar chart-om) i tabelarno, ostali rezultati se nalaze na dnu
+      stranice.</p>
+    <br>
+  </div>
+
+  <div class="chart_container" id="chart_container">
+    <p id="results_title1">GRAFIČKI PREGLED REZULTATA PROCENE</p>
+    <canvas id="line-chart" style="width:100%"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+  </div>
+  <div class="chart_description" id="chart_description">
+  </div>
+  <div class="table_container" id="table_container">
+    <br><br>
+    <p id="results_title">TABELARNI PREGLED REZULTATA PROCENE ZADOVOLJSTVA POSLOM</p>
+    <table id="results_table">
+      <colgroup>
+        <col span="1" style="width: 80%;">
+        <col span="1" style="width: 20%;">
+      </colgroup>
+      <tbody>
+        <tr>
+          <th>Faktor zadovoljstva poslom</th>
+          <th>Ocena</th>
+        </tr>
+        <tr>
+          <td style="text-align: left;">1: OPTEREĆENOST POSLOM</td>
+          <td id="res_1"></td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">2: RAVNOTEŽA IZMEĐU POSLA I PRIVATNOG ŽIVOTA</td>
+          <td id="res_2"></td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">3: STABILNOST POSLA</td>
+          <td id="res_3"></td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">4: RADNI USLOVI</td>
+          <td id="res_4"></td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">5: AUTONOMIJA RADA I FLEKSIBILNOST POSLA </td>
+          <td id="res_5"></td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">6: VREDNOVANJE UČINKA RADA </td>
+          <td id="res_6"></td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">7: RAZNOLIKOST POSLOVNIH ZADATAKA </td>
+          <td id="res_7"></td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">8: KOMPENZACIJA </td>
+          <td id="res_8"></td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">9: UNUTAR-KOMPANIJSKA KOMUNIKACIJA</td>
+          <td id="res_9"></td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">10: IZAZOVI </td>
+          <td id="res_10"></td>
+        </tr>
+
+        <tr>
+          <td style="text-align: left;">11: STEPEN ANGAŽOVANOSTI LIČNIH KOMPETENCIJA </td>
+          <td id="res_11"></td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">12: NAPREDOVANJE</td>
+          <td id="res_12"></td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">13: ODNOS SA NADREĐENIMA</td>
+          <td id="res_13"></td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">14: NIVO STRESA</td>
+          <td id="res_14"></td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">15: ODNOSI SA KOLEGAMA </td>
+          <td id="res_15"></td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">16: PRISTUP MENADŽMENTA U REŠAVANJU INTERPERSONALNIH KONFLIKATA </td>
+          <td id="res_16"></td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">17: PRILIKE ZA PROFESIONALNI RAZVOJ</td>
+          <td id="res_17"></td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">18: BENEFICIJE i BONUSI </td>
+          <td id="res_18"></td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">19: KOMPETNETNOST MENADŽMENTA</td>
+          <td id="res_19"></td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">20: OSEĆAJ PRIPADNOSTI</td>
+          <td id="res_20"></td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <div class="suggestion_container" id="suggestion_container">
+    <br><br>
+    <p id="results_title">SUGESTIJE ISPITANIKA</p>
+    <table id="suggestion_table">
+      <colgroup>
+        <col span="1" style="width: 100%;">
+      </colgroup>
+      <tbody>
+        <tr>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="footer">
+    <h2 class="menu_item1" style="cursor: pointer;"><a class="menu_item1" href="{{ url_for('pp_1_gen') }}">Generator
+        URL-a</a></h2>
+    <h2 style="color: rgb(255, 255, 255);" class="menu_item2">
+      Rezultati</h2>
+    <h2 class="menu_item3" style="cursor: pointer;"><a class="menu_item3"
+        href="{{ url_for('pp_1_int') }}">Interpretacija</a></h2>
+    <h2 class="menu_item4" style="cursor: pointer;"><a class="menu_item4" href="{{ url_for('pp_1_inst') }}">Upitnik</a>
+    </h2>
+    <h2 class="menu_back" style="cursor: pointer;"><a class="menu_back"
+        href="{{ url_for('main_page_redirect') }}">Izbor instrumenta</a></h2>
+  </div>
+
+
+  <script type="text/javascript" src="{{ url_for('static', filename='scripts/PP_1/pp_1_results.js') }}"></script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='visual/ico/star.ico') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/PP_2/PP_2-style.css') }}">
+  <title>PCL-R</title>
+</head>
+
+<body>
+  <div class="header">
+    <p id="main_title">PCL-R</p>
+    <p id="sub_title">SISTEM RADNE-PSIHOMETRIJSKE PROCENE</p>
+    <div class="header_line"></div>
+  </div>
+  <div class="explanation" id="explanation">
+    <p>PCL-R je skala od 20 ajtema za dijagnostiku psihopatije. PCL-R se
+      smatra pouzdanim i validnim psihološkim instrumentom za merenje psihopatije, ali se njegova upotreba ograničava na
+      forenzičke
+      psihologe i druge stručnjake za forenzičko mentalno zdravlje. Rezultate bi trebalo tumačiti samo kao deo
+      sveobuhvatne procene.
+      <br><br>
+      Osobe sa psihopatijom mogu pokazivati sledeće karakteristike i ponašanja:
+    <ul>
+      <li>impulsivno i neodgovorno ponašanje</li>
+      <li>nedostatak empatije i emocionalne dubine</li>
+      <li>grandiozan osećaj sopstvene vrednosti</li>
+      <li>manipulativno i lažno ponašanje</li>
+      <li>nedostatak kajanja ili osećaja krivice za svoje postupke</li>
+      <li>hronično laganje</li>
+      <li>impulsivno traženje uzbuđenja</li>
+      <li>agresivnost i istorija nasilja</li>
+      <li>nedostatak odgovornosti i prebacivanje krivice</li>
+      <li>teškoće u uspostavljanju i održavanju socijalnih odnosa.</li>
+    </ul>
+    <br>
+    PCL-R se može korsititi tokom intervjua ili prikupljanjem podataka o ispitaniku iz drugih izvora.
+
+
+
+
+    </p>
+  </div>
+
+
+
+  <div class="footer">
+
+    <h2 style="color: rgb(255, 255, 255);" class="menu_item1">Info</a>
+    </h2>
+
+
+    <h2 class="menu_item1" style="cursor: pointer;"><a class="menu_item4" href="{{ url_for('pp_2_instrument') }}">PCL-R check-lista</a>
+    </h2>
+
+
+    <h2 class="menu_item2" style="cursor: pointer;"><a class="menu_item2" href="{{ url_for('pp_2_rezultati') }}">Rezultati</a>
+    </h2>
+
+    <h2 class="menu_back" style="cursor: pointer;"><a class="menu_back"
+        href="{{ url_for('main_page_redirect') }}">Povratak na pregled</a></h2>
+  </div>
+
+
+</html>

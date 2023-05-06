@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='visual/ico/star.ico') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/PP_0/PP_0-style.css') }}">
+    <title>[MBTI] instrument</title>
+</head>
+
+<body>
+    <div class="header">
+        <p id="main_title">MYER-BRIGGS TYPE INDICATOR (MBTI)</p>
+        <p id="sub_title">UPUTSTVO ZA POPUNJAVANJE MYER-BRIGGS TESTA LIČNOSTI</p>
+        <div class="header_line"></div>
+    </div>
+    <div class="uputstvo_container">
+        <p id="uputstvo_title">UPUTSTVO ZA POPUNJAVANJE</p>
+        <p>Popunjavanje testa u proseku traje 15 minuta. Test sadrži 70 pitanja, za svako pitanje su ponuđena 2
+            odgovora. <br><br>
+            Nekoliko saveta za davanje odgovora:
+        <ul>
+            <li>Nema tačnih odgovora na ova pitanja.</li>
+            <li>Odgovorite brzo, ne analizirajte previše. Vodite sa najpribližnijim odgovorom na pitanje.</li>
+            <li>Odgovorite na pitanja "kako jeste", a ne "kako biste želeli da bude" ili "kako biste želeli da Vas drugi
+                vide".</li>
+        </ul>
+        <br>
+        Nakon popunjavanja upitnika dobićete tip Vaše ličnosti i objašnjenje.
+        </p>
+        <br>
+    </div>
+    <br>
+    <div class="uputstvo_container">
+        <p id="uputstvo_title">OSNOVNI PODACI</p>
+        <form method="post" action="/pp_0_inst">
+            <input type="text" class="pp0_instrument_username" name="pp0_instrument_username" placeholder="Unesite svoje ime i prezime" autocomplete="new-password">
+            <br>
+            <input type="submit" class="pp0_instrument_button" value="START" />
+        </form>
+    </div>
+    
+
+    <div class="footer">
+        <h2 class="menu_back" style="cursor: pointer;"><a class="menu_back"
+                href="{{ url_for('pp_0') }}">MBTI info</a></h2>
+    </div>
+    <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/PP_0/pp_0_instrument_name.js') }}"></script>-->
+</body>
+
+</html>

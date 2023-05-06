@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='visual/ico/star.ico') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/PP_0/PP_0-style.css') }}">
+  <title>MBTI</title>
+</head>
+
+<body>
+  <div class="header">
+    <p id="main_title">MYER-BRIGGS TYPE INDICATOR (MBTI)</p>
+    <p id="sub_title">SISTEM RADNE-PSIHOMETRIJSKE PROCENE</p>
+    <div class="header_line"></div>
+  </div>
+  <div class="explanation" id="explanation">
+    <p>MBTI je psihološki instrument koji ima široku primenu u proceni ličnosti. MBTI je zasnovan na konceptu da
+      ljudi imaju inherentne razlike u načinu na koji percipiraju svet oko sebe i donose odluke. Prema MBTI, osobe se
+      mogu klasifikovati prema kombinaciji četiri dimenzije: ekstraverzija/introverzija, senzornost/intuicija,
+      mišljenje/osećajnost i rasuđivanje/iskustvo-zapažanje. Kroz ovaj pristup, pojedinac može bolje razumeti svoje ponašanje,
+      motivaciju i preferencije, kao i ponašanje drugih ljudi u svakodnevnim interakcijama. MBTI test može biti koristan
+      za različite svrhe, uključujući profesionalni razvoj, timsku dinamiku i interpersonalne odnose.<br>
+    <ul>
+      <li>ekstraverzija/introverzija,<br>
+      <li>senzornost/intuicija<br></li>
+      <li>mišljenje/osećajnost<br></li>
+      <li>rasuđivanje/iskustvo-zapažanje</li>
+    </ul>
+    <br>Nakon što se ispitanik uradi test, generiše se MBTI profil ličnosti, sastoji se od četiri slova koja objašnjavaju profil ličnosti ispitanika.
+    </p>
+  </div>
+
+  <table id="description_table">
+    <colgroup>
+      <col span="1" style="width: 100%;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td class="MBTI_header">16 TIPOVA LIČNOSTI</td>
+      </tr>
+      <tr>
+        <td class="blank">&nbsp</td>
+      </tr>
+      <!-- #1 -->
+      <tr>
+        <td class="tl_title">ISTJ</td>
+      </tr>
+      <tr>
+        <td class="tl_sub_title">[The Inspector]</td>
+      </tr>
+      <tr>
+        <td class="tl_description">Rezerviran i praktičan, lojalan, uredan i tradicionalan. </td>
+      </tr>
+      </tr>
+      <tr>
+        <td class="blank">&nbsp</td>
+      </tr>
+      <!-- #2 -->
+      <tr>
+        <td class="tl_title">ISTP</td>
+      </tr>
+      <tr>
+        <td class="tl_sub_title">[The Crafter]</td>
+      </tr>
+      <tr>
+        <td class="tl_description">Nezavisne osobe, uživaju u novim iskustvima koja omogućavaju lični razvoj. </td>
+      </tr>
+      <tr>
+        <td class="blank">&nbsp</td>
+      </tr>
+      <!-- #3 -->
+      <tr>
+        <td class="tl_title">ISFJ</td>
+      </tr>
+      <tr>
+        <td class="tl_sub_title">[The Protector]</td>
+      </tr>
+      <tr>
+        <td class="tl_description">Tople i predane osobe, uvek spremne zaštititi one koje vole.
+        </td>
+      </tr>
+      <tr>
+        <td class="blank">&nbsp</td>
+      </tr>
+      <!-- #4 -->
+      <tr>
+        <td class="tl_title">ISFP</td>
+      </tr>
+      <tr>
+        <td class="tl_sub_title">[The Artist]</td>
+      </tr>
+      <tr>
+        <td class="tl_description">Opušteni i fleksibilni, umetnički su nastrojeni i skloni su biti rezervisani.</td>
+      </tr>
+      <tr>
+        <td class="blank">&nbsp</td>
+      </tr>
+      <!-- #5 -->
+      <tr>
+        <td class="tl_title">INFJ</td>
+      </tr>
+      <tr>
+        <td class="tl_sub_title">[The Advocate]</td>
+      </tr>
+      <tr>
+        <td class="tl_description">Analitični i kreativni, jedni su od najređih Myers-Briggs tipova. </td>
+      </tr>
+      <tr>
+        <td class="blank">&nbsp</td>
+      </tr>
+      <!-- #6 -->
+      <tr>
+        <td class="tl_title">INFP</td>
+      </tr>
+      <tr>
+        <td class="tl_sub_title">[The Mediator]</td>
+      </tr>
+      <tr>
+        <td class="tl_description">Idealistički orijentisane osobe s visoko razvijenim sistemom vrednosti, trude se učiniti
+          svijet boljim. </td>
+      </tr>
+      <tr>
+        <td class="blank">&nbsp</td>
+      </tr>
+      <!-- #7 -->
+      <tr>
+        <td class="tl_title">INTJ</td>
+      </tr>
+      <tr>
+        <td class="tl_sub_title">[The Architect]</td>
+      </tr>
+      <tr>
+        <td class="tl_description">Kreativni i analitični i veoma logični.
+        </td>
+      </tr>
+      <tr>
+        <td class="blank">&nbsp</td>
+      </tr>
+      <!-- #8 -->
+      <tr>
+        <td class="tl_title">INTP</td>
+      </tr>
+      <tr>
+        <td class="tl_sub_title">[The Thinker]</td>
+      </tr>
+      <tr>
+        <td class="tl_description">Tihi i introvertni, poznati su po bogato razvijenom unutrašnjem svetu.</td>
+      </tr>
+      <tr>
+        <td class="blank">&nbsp</td>
+      </tr>
+      <!-- #9 -->
+      <tr>
+        <td class="tl_title">ESTP</td>
+      </tr>
+      <tr>
+        <td class="tl_sub_title">[The Persuader]</td>
+      </tr>
+      <tr>
+        <td class="tl_description">Društveni i dramatični, uživaju provoditi vreme s drugima i fokusiraju se na trenutno
+          stanje. </td>
+      </tr>
+      <tr>
+        <td class="blank">&nbsp</td>
+      </tr>
+      <!-- #10 -->
+      <tr>
+        <td class="tl_title">ESTJ</td>
+      </tr>
+      <tr>
+        <td class="tl_sub_title">[The Director]</td>
+      </tr>
+      <tr>
+        <td class="tl_description">Odlučni i orijentisan na pravila, imaju čvrsto postavljene principe i sklonost preuzimanju kontrole. </td>
+      </tr>
+      <tr>
+        <td class="blank">&nbsp</td>
+      </tr>
+      <!-- #11 -->
+      <tr>
+        <td class="tl_title">ESFP</td>
+      </tr>
+      <tr>
+        <td class="tl_sub_title">[The Performer]</td>
+      </tr>
+      <tr>
+        <td class="tl_description">Društveni i spontani, uživaju biti u centru pažnje. </td>
+      </tr>
+      <tr>
+        <td class="blank">&nbsp</td>
+      </tr>
+      <!-- #12 -->
+      <tr>
+        <td class="tl_title">ESFJ</td>
+      </tr>
+      <tr>
+        <td class="tl_sub_title">[The Caregiver]</td>
+      </tr>
+      <tr>
+        <td class="tl_description">Meke su naravi i društveni, skloni su verovati u najbolje u drugim ljudima. </td>
+      </tr>
+      <tr>
+        <td class="blank">&nbsp</td>
+      </tr>
+      <!-- #13 -->
+      <tr>
+        <td class="tl_title">ENFP</td>
+      </tr>
+      <tr>
+        <td class="tl_sub_title">[The Champion]</td>
+      </tr>
+      <tr>
+        <td class="tl_description">Harizmatični i energični, uživaju u situacijama u kojima mogu koristiti svoju
+          kreativnost. </td>
+      </tr>
+      <tr>
+        <td class="blank">&nbsp</td>
+      </tr>
+      <!-- #14 -->
+      <tr>
+        <td class="tl_title">ENFJ</td>
+      </tr>
+      <tr>
+        <td class="tl_sub_title">[The Giver]</td>
+      </tr>
+      <tr>
+        <td class="tl_description">Lojalne i osetljive osobe, poznati su po razumevanju i velikodušnosti. </td>
+      </tr>
+      <tr>
+        <td class="blank">&nbsp</td>
+      </tr>
+      <!-- #15 -->
+      <tr>
+        <td class="tl_title">ENTP</td>
+      </tr>
+      <tr>
+        <td class="tl_sub_title">[The Debater]</td>
+      </tr>
+      <tr>
+        <td class="tl_description">Inventivne osobe, vole biti okružene idejama i skloni su pokretanju mnogih projekata
+          (ali mogu imati problema sa završetkom). </td>
+      </tr>
+      <tr>
+        <td class="blank">&nbsp</td>
+      </tr>
+
+      <tr>
+        <td class="tl_title">ENTJ</td>
+      </tr>
+      <tr>
+        <td class="tl_sub_title">[The Commander]</td>
+      </tr>
+      <tr>
+        <td class="tl_description">Otvoreni i samouvereni, odlični su u stvaranju planova i organizaciji projekata.</td>
+      </tr>
+      <tr>
+        <td class="blank">&nbsp</td>
+      </tr>
+
+      <tr>
+        <td class="blank">&nbsp</td>
+      </tr>
+      <tr>
+        <td class="blank">&nbsp</td>
+      </tr>
+      <tr>
+        <td class="blank">&nbsp</td>
+      </tr>
+
+
+
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="footer">
+
+    <h2 class="menu_item1" style="cursor: pointer;"><a class="menu_item1" href="{{ url_for('pp_0_gen') }}">Generator
+        URL-a</a></h2>
+
+    <h2 class="menu_item2" style="cursor: pointer;"><a class="menu_item2" href="{{ url_for('pp_0_rez') }}">Rezultati</a>
+    </h2>
+
+    <h2 class="menu_item4" style="cursor: pointer;"><a class="menu_item4"
+        href="{{ url_for('pp_0_inst_name') }}">Upitnik</a>
+    </h2>
+
+    <h2 class="menu_back" style="cursor: pointer;"><a class="menu_back"
+        href="{{ url_for('main_page_redirect') }}">Izbor instrumenta</a></h2>
+  </div>
+
+  <!-- Modal content -->
+  <div id="modal_main" class="modal">
+    <div class="modal-content">
+      <div class="modal_title">UPUTSTVO ZA KORIŠĆENJE:</div>
+      <span class="close">&times;</span>
+      <p>1. Na stranici Generator URL-a, generiše se link upitnika koji se
+        šalje ispitaniku na popunjavanje. Trajanje generisanog linka je definisano na stranici Podešavanja.
+        <br>2. Nakon završenog popunjavanja, rezultati će biti prikazani na stranici Rezultati.
+        <br>3. Interpretacija rezultata i smernice za povećanje zadovoljstva su date na stranici Interpretacija.
+        <br>4. Funkcionalan upitnik se nalazi na stranici Upitnik.
+      </p>
+    </div>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/PP_0/pp_0.js') }}"></script>
+</body>
+
+</html>

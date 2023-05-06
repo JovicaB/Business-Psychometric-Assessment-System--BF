@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    user-select: none;
+    color: rgb(0, 0, 0);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    background: url("../visual/images/backgound.png") repeat;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*HEADER*/
+.header {
+    position: relative;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(40, 40, 40);
+}
+
+#main_title {
+    color: rgb(255, 255, 255);
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-bottom: 1px;
+    font-size: 20px;
+}
+
+#sub_title {
+    color: rgb(169, 169, 169);
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-top: 2px;
+    font-size: 14px;
+}
+
+.header_line {
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(157, 157, 157);
+    width: 100%;
+    height: 3px;
+}
+
+/*URL Duration*/
+#url_duration_container {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 70px;
+}
+
+#url_duration_title {
+    font-size: 1.5em;
+    margin-bottom: 2em;
+}
+
+#url_duration_description {
+    margin-top: -0.8em;
+    font-size: 0.8em;
+    color: #595959;
+}
+
+#global_duration {
+    width: 50px;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    padding: 4px;
+    outline: none !important;
+    border: 1px solid rgb(101, 101, 101);
+    font-size: 14px;
+    text-align: center;
+}
+
+#url_duration_button {
+    width: 100px;
+}
+
+
+/*Reset*/
+.reset_container {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    top: 20%;
+    text-align: center;
+    padding-top: 0.2em;
+}
+
+#reset_label {
+    font-size: 0.8em;
+    color: #595959;
+    margin-top: -2.3em;
+}
+
+#reset_table td:first-child {
+    font-size: 1em;
+    text-align: left;
+}
+
+#reset_table button {
+    width: 8em;
+}
+
+#reset_table td {
+    font-size: 1em;
+    border-bottom: 1px dotted #4c4c4c;
+    border-radius: 0.1em;
+    padding-top: 0.3em;
+}
+
+
+/*MENU*/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0px;
+    padding-left: 20px;
+    margin: 0px;
+    background-color: rgb(24, 24, 24);
+    color: rgb(255, 255, 255);
+    height: 3%;
+    display: flex;
+    align-items: center;
+    background-color: #222222;
+}
+
+.footer>h2 {
+    cursor: pointer;
+    color: rgb(211, 211, 211);
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.footer>h2 :hover {
+    color: rgb(255, 255, 255) !important;
+}
+
+
+
+
+
+

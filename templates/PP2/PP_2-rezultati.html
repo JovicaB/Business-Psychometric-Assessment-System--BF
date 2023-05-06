@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='visual/ico/star.ico') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/PP_2/PP_2-style.css') }}">
+    <title>[PCL-R] rezultati</title>
+</head>
+
+<body>
+    <div class="header">
+        <p id="main_title">PCL-R</p>
+        <p id="sub_title">REZULTATI</p>
+        <div class="header_line"></div>
+    </div>
+
+    <div class="table_container" id="table_container">
+        <br>
+        <p id="results_title">REZULTATI PCL-R PROCENE</p>
+        <p id="results_subtitle">Dupli klik na ime ispitanika za interpretaciju rezultata procene</p>
+        <table id="results_table">
+            <colgroup>
+              <col span="1" style="width: 80%;">
+              <col span="1" style="width: 20%;">
+              <col span="1" style="width: 0; visibility: collapse;">
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>ID</th>
+                <th>Faktor zadovoljstva poslom</th>
+                <th>Ocena</th>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+      
+            </tbody>
+          </table>
+        </div>
+
+    <div class="footer">
+        <h2 class="menu_item2" style="cursor: pointer;"><a class="menu_item1" href="{{ url_for('pp_2') }}">Info</a>
+        </h2>
+
+        <h2 class="menu_item1" style="cursor: pointer;"><a class="menu_item4"
+                href="{{ url_for('pp_2_instrument') }}">PCL-R check-lista</a>
+        </h2>
+
+        <h2 style="color: rgb(255, 255, 255);" class="menu_item2">
+            Rezultati</h2>
+
+
+        <h2 class="menu_back" style="cursor: pointer;"><a class="menu_back"
+                href="{{ url_for('main_page_redirect') }}">Izbor
+                instrumenta</a></h2>
+    </div>
+
+    <div id="pp_2-modal" class="modal">
+        <div class="pp_2-modal-content">
+          <span class="pp_2-close">&times;</span>
+          <h2>Interpretacija</h2>
+          <p><strong>Ime ispitanika:</strong> <span id="pp_2-modal-name"></span></p>
+          <p><strong>Emocionalna distanciranost:</strong> <span id="pp_2-modal-factor1"></span></p>
+          <p><strong>Antisocijalno ponašanje:</strong> <span id="pp_2-modal-factor2"></span></p>
+          <p><strong>Total:</strong> <span id="pp_2-modal-total"></span></p>
+        </div>
+      </div>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/PP_2/pp_2_results.js') }}"></script>
+</body>
+
+</html>

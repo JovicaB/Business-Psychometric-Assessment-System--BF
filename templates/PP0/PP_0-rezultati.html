@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='visual/ico/star.ico') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/PP_0/PP_0-style.css') }}">
+  <title>[MBTI] rezultati</title>
+</head>
+
+<body>
+  <div class="header">
+    <p id="main_title">MYER-BRIGGS TYPE INDICATOR (MBTI)</p>
+    <p id="sub_title">REZULTATI I INTERPRETACIJA</p>
+    <div class="header_line"></div>
+  </div>
+
+  <div class="table_container" id="table_container">
+    <br>
+    <p id="results_title">PREGLED MBTI PROCENE LIČNOSTI</p>
+    <p id="results_subtitle">Dupli klik na ime ispitanika za interpretaciju profila ličnosti</p>
+    <table id="results_table">
+      <colgroup>
+        <col span="1" style="width: 80%;">
+        <col span="1" style="width: 20%;">
+        <col span="1" style="width: 0; visibility: collapse;">
+      </colgroup>
+      <tbody>
+        <tr>
+          <th>ID</th>
+          <th>Faktor zadovoljstva poslom</th>
+          <th>Ocena</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <div class="footer">
+    <h2 class="menu_item1" style="cursor: pointer;"><a class="menu_item1" href="{{ url_for('pp_0_gen') }}">Generator
+        URL-a</a></h2>
+
+    <h2 style="color: rgb(255, 255, 255);" class="menu_item2">
+      Rezultati</h2>
+
+    <h2 class="menu_item4" style="cursor: pointer;"><a class="menu_item4"
+        href="{{ url_for('pp_0_inst_name') }}">Upitnik</a>
+    </h2>
+
+    <h2 class="menu_back" style="cursor: pointer;"><a class="menu_back" href="{{ url_for('main_page_redirect') }}">Izbor
+        instrumenta</a></h2>
+  </div>
+
+  <div id="pp_0-modal" class="modal">
+    <div class="pp_0-modal-content">
+      <span class="pp_0-close">&times;</span>
+      <h2>Interpretacija</h2>
+      <p><strong>ime ispitanika:</strong> <span id="pp_0-modal-name"></span></p>
+      <p><strong>MBTI profil ličnosti:</strong> <span id="pp_0-modal-code"></span></p>
+      <p><strong>naziv profila ličnosti:</strong> <span id="pp_0-modal-title"></span></p>
+      <p><strong>dimenzije ličnosti:</strong><br>
+        &nbsp&nbsp-&nbsp&nbspekstraverzija: <span id="pp_0-modal-scoreA1">%</span>
+        &nbsp&nbsp-&nbsp&nbspintroverzija: <span id="pp_0-modal-scoreA2">%</span><br>
+        &nbsp&nbsp-&nbsp&nbspsenzornost: <span id="pp_0-modal-scoreB1">%</span>
+        &nbsp&nbsp-&nbsp&nbspintuicija: <span id="pp_0-modal-scoreB2">%</span><br>
+        &nbsp&nbsp-&nbsp&nbspmišljenje: <span id="pp_0-modal-scoreC1">%</span>
+        &nbsp&nbsp-&nbsp&nbspemocije: <span id="pp_0-modal-scoreC2">%</span><br>
+        &nbsp&nbsp-&nbsp&nbsprasuđivanje: <span id="pp_0-modal-scoreD1">%</span>
+        &nbsp&nbsp-&nbsp&nbspiskustvo-zapažanje: <span id="pp_0-modal-scoreD2">%</span><br>
+      <p><strong>opis:</strong> <span id="pp_0-modal-description" style="text-align: justify;"></span></p>
+      <p><strong>karijera:</strong> <span id="pp_0-modal-career" style="text-align: justify;"></span></p>
+    </div>
+  </div>
+
+
+
+  <script type="text/javascript" src="{{ url_for('static', filename='scripts/PP_0/pp_0_results.js') }}"></script>
+</body>
+
+</html>

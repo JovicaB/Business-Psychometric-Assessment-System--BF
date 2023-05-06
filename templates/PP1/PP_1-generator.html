@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='visual/ico/star.ico') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/PP_1/PP_1-style.css') }}">
+    <title>[JSQ] generator URL-a</title>
+</head>
+
+<body>
+    <div class="header">
+        <p id="main_title">UPITNIK ZA PROCENU ZADOVOLJSTVA POSLOM</p>
+        <p id="sub_title">GENERATOR LINK-a UPITNIKA</p>
+        <div class="header_line"></div>
+    </div>
+    <div class="explanation" id="explanation">
+        <p>Na ovoj stranici se generiše link upitnika za procenu zadovoljstva poslom.</p><br>
+        <p id="gen_napomena">Generisan URL će biti kopiran u clipboard. <br>URL pošaljite ispitaniku na popunjavanje.</p>
+    </div>
+
+    <div class="generator_content">
+        <div class="link_container">
+            <label class="link" id="link"></label>
+            <input type="button" class="button" value="Generiši URL" id="pp1_button">
+           </div>
+    </div>
+
+    <div class="footer">
+        <h2 style="color: rgb(255, 255, 255);" class="menu_item3">
+            Generator URL-a</h2>
+        <h2 class="menu_item2" style="cursor: pointer;"><a class="menu_item2"
+                href="{{ url_for('pp_1_rez') }}">Rezultati</a>
+        </h2>
+        <h2 class="menu_item3" style="cursor: pointer;"><a class="menu_item3"
+                href="{{ url_for('pp_1_int') }}">Interpretacija</a></h2>
+
+
+        <h2 class="menu_item4" style="cursor: pointer;"><a class="menu_item4"
+                href="{{ url_for('pp_1_inst') }}">Upitnik</a>
+        </h2>
+
+        <h2 class="menu_back" style="cursor: pointer;"><a class="menu_back"
+                href="{{ url_for('main_page_redirect') }}">Izbor instrumenta</a></h2>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/PP_1/pp_1_generator.js') }}"></script>
+
+
+</body>
+
+</html>

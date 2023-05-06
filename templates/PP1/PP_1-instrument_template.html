@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='visual/ico/star.ico') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/PP_1/PP_1-style.css') }}">
+    <title>[JSQ] instrument</title>
+</head>
+
+<body>
+    <div class="header">
+        <p id="main_title">UPITNIK ZA PROCENU ZADOVOLJSTVA POSLOM</p>
+        <p id="sub_title"></p>
+        <div class="header_line"></div>
+    </div>
+    <div class="uputstvo_container">
+        <p id="uputstvo_title">UPUTSTVO ZA POPUNJAVANJE</p>
+        <p>Upitnik sadrži 20 pitanja koja se odnose na različite aspekte zadovoljstva poslom. Ocenom od 1-5
+            (najniža ocena 1 znači da uopšte niste zadovoljni) ocenite svaki od faktora zadovoljstva
+            poslom.</p>
+    </div>
+
+    <div class="upitnik_container">
+        <br>
+        <br>
+        <br>
+        <h2></h2><br><br>
+        <table id="upitnik_table">
+            <colgroup>
+                <col span="1" style="width: 100%;">
+            </colgroup>
+            <tbody>
+                <!-- PITANJE 1-->
+                <tr>
+                    <td class="pitanje_title">1: OPTEREĆENOST POSLOM</td>
+                </tr>
+                <tr>
+                    <td class="pitanje_objasnjenje">
+                        Kako biste ocenili opterećenost radnim zaduženjima?
+                    </td>
+                    <tr>
+                        <td>
+                            <div class="rad_container">
+                                <label class="rad_container">ocena: 1&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="1_score_1" name="score1"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 2&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="1_score_2" name="score1"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 3&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="1_score_3" name="score1"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 4&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="1_score_4" name="score1"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 5&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="1_score_5" name="score1"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje"></td>
+                    </tr>
+                    <!-- PITANJE 2-->
+                    <tr>
+                        <td class="pitanje_title">2: RAVNOTEŽA IZMEĐU POSLA I PRIVATNOG ŽIVOTA</td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje_objasnjenje">
+                            Koliko uspešno uspevate da upravljate radnim obavezama i istovremeno vodite ispunjen
+                            život van posla?
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="rad_container">
+                                <label class="rad_container">ocena: 1&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="2_score_1" name="score2"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 2&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="2_score_2" name="score2"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 3&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="2_score_3" name="score2"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 4&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="2_score_4" name="score2"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 5&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="2_score_5" name="score2"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje"></td>
+                    </tr>
+                    <!-- PITANJE 3-->
+                    <tr>
+                        <td class="pitanje_title">3: STABILNOST POSLA</td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje_objasnjenje">
+                            Ocenite osećaj stabilnosti posla (dužina ugovora o radu,
+                            fluktuaciju zaposlenih, finansijska stabilnost kompanije i sl.).
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="rad_container">
+                                <label class="rad_container">ocena: 1&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="3_score_1" name="score3"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 2&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="3_score_2" name="score3"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 3&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="3_score_3" name="score3"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 4&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="3_score_4" name="score3"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 5&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="3_score_5" name="score3"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje"></td>
+                    </tr>
+    
+                    <!-- PITANJE 4-->
+                    <tr>
+                        <td class="pitanje_title">4: RADNI USLOVI</td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje_objasnjenje">
+                            Kako ocenjujete fizičke uslove rada (funkcionalnost opreme za rad, osećaj komfora, higijenski
+                            faktori, sigurnost na poslu)?
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="rad_container">
+                                <label class="rad_container">ocena: 1&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="4_score_1" name="score4"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 2&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="4_score_2" name="score4"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 3&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="4_score_3" name="score4"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 4&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="4_score_4" name="score4"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 5&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="4_score_5" name="score4"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje"></td>
+                    </tr>
+    
+                    <!-- PITANJE 5-->
+                    <tr>
+                        <td class="pitanje_title">5: AUTONOMIJA RADA I FLEKSIBILNOST POSLA
+                        <td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje_objasnjenje">
+                            Procenite stepen slobode i fleksibilnosti koji imate u obavljanju posla (sloboda
+                            izbora pristupa kojim završavate svoje dnevne poslovne obaveze).
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="rad_container">
+                                <label class="rad_container">ocena: 1&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="5_score_1" name="score5"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 2&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="5_score_2" name="score5"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 3&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="4_score_3" name="score5"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 4&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="5_score_4" name="score5"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 5&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="5_score_5" name="score5"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje"></td>
+                    </tr>
+    
+    
+                    <!-- PITANJE 6-->
+                    <tr>
+                        <td class="pitanje_title">6: VREDNOVANJE UČINKA RADA
+                        <td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje_objasnjenje">
+                            Procenite adekvatnost kontrole urađenog posla i povratnih informacija (pohvala,
+                            sugestija, instrukcija). 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="rad_container">
+                                <label class="rad_container">ocena: 1&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="6_score_1" name="score6"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 2&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="6_score_2" name="score6"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 3&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="6_score_3" name="score6"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 4&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="6_score_4" name="score6"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 5&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="6_score_5" name="score6"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje"></td>
+                    </tr>
+    
+                    <!-- PITANJE 7-->
+                    <tr>
+                        <td class="pitanje_title">7: RAZNOLIKOST POSLOVNIH ZADATAKA
+                        <td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje_objasnjenje">
+                            Ocenite raznovrsnost radnih zadataka.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="rad_container">
+                                <label class="rad_container">ocena: 1&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="7_score_1" name="score7"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 2&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="7_score_2" name="score7"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 3&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="7_score_3" name="score7"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 4&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="7_score_4" name="score7"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 5&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="7_score_5" name="score7"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje"></td>
+                    </tr>
+    
+                    <!-- PITANJE 8-->
+                    <tr>
+                        <td class="pitanje_title">8: KOMPENZACIJA
+                        <td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje_objasnjenje">
+                            Ocenite adekvatnost kompenzacije u odnosu na zalaganje.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="rad_container">
+                                <label class="rad_container">ocena: 1&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="8_score_1" name="score8"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 2&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="8_score_2" name="score8"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 3&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="8_score_3" name="score8"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 4&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="8_score_4" name="score8"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 5&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="8_score_5" name="score8"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje"></td>
+                    </tr>
+    
+                    <!-- PITANJE 9-->
+                    <tr>
+                        <td class="pitanje_title">9: UNUTAR-KOMPANIJSKA KOMUNIKACIJA
+                        <td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje_objasnjenje">
+                            Ocenite kvalitet komunikacije na relaciji zaposleni-nadređeni.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="rad_container">
+                                <label class="rad_container">ocena: 1&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="9_score_1" name="score9"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 2&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="9_score_2" name="score9"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 3&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="9_score_3" name="score9"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 4&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="9_score_4" name="score9"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 5&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="9_score_5" name="score9"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje"></td>
+                    </tr>
+    
+                    <!-- PITANJE 10-->
+                    <tr>
+                        <td class="pitanje_title">10: IZAZOVI
+                        <td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje_objasnjenje">
+                            U kojoj meri je posao izazovan da bi stimulisao učenje novih znanja i usvajanje novih veština?
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="rad_container">
+                                <label class="rad_container">ocena: 1&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="10_score_1" name="score10"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 2&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="10_score_2" name="score10"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 3&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="10_score_3" name="score10"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 4&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="10_score_4" name="score10"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 5&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="10_score_5" name="score10"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje"></td>
+                    </tr>
+    
+                    <!-- PITANJE 11-->
+                    <tr>
+                        <td class="pitanje_title">11: STEPEN ANGAŽOVANOSTI LIČNIH KOMPETENCIJA
+                        <td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje_objasnjenje">
+                            Ocenite koliko ste zadovoljni angažovanjem Vaših znanja, sposobnosti i veština.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="rad_container">
+                                <label class="rad_container">ocena: 1&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="11_score_1" name="score11"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 2&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="11_score_2" name="score11"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 3&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="11_score_3" name="score11"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 4&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="11_score_4" name="score11"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 5&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="11_score_5" name="score11"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje"></td>
+                    </tr>
+    
+                    <!-- PITANJE 12-->
+                    <tr>
+                        <td class="pitanje_title">12: MOGUĆNOST NAPREDOVANJA
+                        <td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje_objasnjenje">
+                            Ocenite mogućnost napredovanja.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="rad_container">
+                                <label class="rad_container">ocena: 1&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="12_score_1" name="score12"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 2&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="12_score_2" name="score12"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 3&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="12_score_3" name="score12"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 4&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="12_score_4" name="score12"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 5&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="12_score_5" name="score12"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje"></td>
+                    </tr>
+    
+                    <!-- PITANJE 13-->
+                    <tr>
+                        <td class="pitanje_title">13: ODNOS SA NADREĐENIMA
+                        <td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje_objasnjenje">
+                            Koliko ste zadovoljni odnosom sa nadređenim.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="rad_container">
+                                <label class="rad_container">ocena: 1&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="13_score_1" name="score13"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 2&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="13_score_2" name="score13"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 3&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="13_score_3" name="score13"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 4&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="13_score_4" name="score13"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 5&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="13_score_5" name="score13"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje"></td>
+                    </tr>
+    
+                    <!-- PITANJE 14-->
+                    <tr>
+                        <td class="pitanje_title">14: NIVO STRESA
+                        <td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje_objasnjenje">
+                            Koliko je Vaš posao stresan (rokovi, nadređeni, odnosi sa kolegama i dr).
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="rad_container">
+                                <label class="rad_container">ocena: 1&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="14_score_1" name="score14"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 2&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="14_score_2" name="score14"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 3&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="14_score_3" name="score14"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 4&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="14_score_4" name="score14"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 5&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="14_score_5" name="score14"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje"></td>
+                    </tr>
+    
+                    <!-- PITANJE 15-->
+                    <tr>
+                        <td class="pitanje_title">15: ODNOSI SA KOLEGAMA
+                        <td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje_objasnjenje">
+                            Koliko ste zadovoljni odnosima sa kolegama (komunikacija, timski rad)?
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="rad_container">
+                                <label class="rad_container">ocena: 1&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="15_score_1" name="score15"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 2&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="15_score_2" name="score15"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 3&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="15_score_3" name="score15"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 4&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="15_score_4" name="score15"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 5&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="15_score_5" name="score15"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje"></td>
+                    </tr>
+    
+    
+                    <!-- PITANJE 16-->
+                    <tr>
+                        <td class="pitanje_title">16: PRISTUP MENADŽMENTA U REŠAVANJU INTERPERSONALNIH KONFLIKATA
+                        <td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje_objasnjenje">
+                            Koliko organizacija ulaže u međuljudske odnose, da li se gaji kultura dobrih odnosa i
+                            kakav je kvalitet medijacije ukoliko do konflikata dođe. Ocenite prevenciju i kvalitet rešavanja konflikata u organizaciji?
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="rad_container">
+                                <label class="rad_container">ocena: 1&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="16_score_1" name="score16"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 2&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="16_score_2" name="score16"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 3&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="16_score_3" name="score16"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 4&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="16_score_4" name="score16"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 5&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="16_score_5" name="score16"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje"></td>
+                    </tr>
+    
+                    <!-- PITANJE 17-->
+                    <tr>
+                        <td class="pitanje_title">17: PRILIKE ZA PROFESIONALNI RAZVOJ
+                        <td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje_objasnjenje">
+                            Koliko ste zadovoljni mogućnošću usavršavanja i profesionalnog napredovanja?
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="rad_container">
+                                <label class="rad_container">ocena: 1&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="17_score_1" name="score17"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 2&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="17_score_2" name="score17"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 3&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="17_score_3" name="score17"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 4&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="17_score_4" name="score17"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 5&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="17_score_5" name="score17"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje"></td>
+                    </tr>
+    
+                    <!-- PITANJE 18-->
+                    <tr>
+                        <td class="pitanje_title">18: BENEFICIJE i BONUSI
+                        <td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje_objasnjenje">
+                            Koju biste ocenu dali sistemu nagrađivanja beneficijama i bonusima za dodatno zalaganje na poslu?
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="rad_container">
+                                <label class="rad_container">ocena: 1&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="18_score_1" name="score18"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 2&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="18_score_2" name="score18"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 3&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="18_score_3" name="score18"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 4&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="18_score_4" name="score18"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 5&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="18_score_5" name="score18"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje"></td>
+                    </tr>
+    
+                    <!-- PITANJE 19-->
+                    <tr>
+                        <td class="pitanje_title">19: KOMPETNETNOST MENADŽMENTA
+                        <td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje_objasnjenje">
+                            Kako procenjujete način upravljanja kompanijom i efikanost odluka koje donosi menadžment?
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="rad_container">
+                                <label class="rad_container">ocena: 1&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="19_score_1" name="score19"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 2&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="19_score_2" name="score19"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 3&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="19_score_3" name="score19"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 4&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="19_score_4" name="score19"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 5&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="19_score_5" name="score19"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje"></td>
+                    </tr>
+    
+                    <!-- PITANJE 20-->
+                    <tr>
+                        <td class="pitanje_title">20: OSEĆAJ PRIPADNOSTI
+                        <td>
+                    </tr>
+                    <tr>
+                        <td class="pitanje_objasnjenje">
+                            Procenite u kojoj meri se osećate kao integralni deo kompanije u kojoj radite.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="rad_container">
+                                <label class="rad_container">ocena: 1&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="20_score_1" name="score20"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 2&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="20_score_2" name="score20"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 3&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="20_score_3" name="score20"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 4&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="20_score_4" name="score20"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                                <label class="rad_container">ocena: 5&nbsp;&nbsp;
+                                    <input type="radio" checked="checked" class="radio" id="20_score_5" name="score20"
+                                        value="no">
+                                    <span class="rad_checkmark"></span>
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="blank"></td>
+                    </tr>
+                    <tr>
+                        <td class="sugestija_desc">Kakvu biste sugestiju dali za povećanje zadovoljstva poslom (opciono).</td>
+                    </tr>
+                    <tr>
+                        <td class="Sugestija"><textarea name="sug" rows="4" id="sug" spellcheck="false"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="blank"></td>
+                    </tr>
+                    <tr>
+                        <td class="Sugestija"><button class="submit" id="submit">Završeno</button></td>
+                    </tr>
+                    <tr>
+                        <td class="blank"></td>
+                    </tr>
+                    <tr>
+                        <td class="blank"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    <div class="footer">
+    </div>
+
+
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/PP_1/pp_1_upitnik_template.js') }}"></script>
+</body>
+
+</html>

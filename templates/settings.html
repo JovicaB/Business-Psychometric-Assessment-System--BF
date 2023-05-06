@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='visual/ico/star.ico') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/settings.css') }}">
+    <title>globalna podešavanja </title>
+  </head>
+
+<body>
+    <div class="header">
+        <p id="main_title">SISTEM POSLOVNO-PSIHOMETRIJSKE PROCENE</p>
+        <p id="sub_title">GLOBALNA PODEŠAVANJA</p>
+        <div class="header_line"></div>
+    </div>
+
+    <div class="url_duration_container" id="url_duration_container">
+        <br>
+        <p id="url_duration_title">GLOBALNA PODEŠAVANJA</p>
+        <p>PODEŠAVANJE TRAJANJA GENERISANOG URL-a</p>
+        <p id="url_duration_description">Podešavanje trajanja generisanog URL-a u satima (maksimum 24 časa)</p>
+        <input type="text" class="tb" id="global_duration" maxlength="2" onblur="validateDuration()">
+        <p id="global_duration_label">{{ duration_label }}</p>
+        <button class="button" id="url_duration_button">Snimi</button>
+    </div>
+
+    <div class="reset_container">
+        <p>RESET REZULTATA</p>
+        <br>
+        <p id="reset_label">Brisanje rezultata prethodnih procena</p>
+        <table id="reset_table">
+            <colgroup>
+                <col span="1" style="width: 90%;">
+                <col span="1" style="width: 10%;">
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th></th>
+                </tr>
+
+                <tr>
+                    <td>Myers-Briggs Type Indicator [MBTI]</td>
+                    <td><button class="reset_button_pp1" id="reset_button_pp0"
+                            onclick="resetSettings('pp_0')">Reset</button></td>
+                </tr>
+
+                <tr>
+                    <td>Upitnik za procenu zadovoljstva poslom</td>
+                    <td><button class="reset_button_pp0" id="reset_button_pp1"
+                            onclick="resetSettings('pp_1')">Reset</button></td>
+                </tr>
+
+                <tr>
+                    <td>PCL-R [check-lista za dijagnostiku psihopatije]</td>
+                    <td><button class="reset_button_pp2" id="reset_button_pp2"
+                            onclick="resetSettings('pp_2')">Reset</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer">
+        <h2 class="menu_item1"><a href="{{ url_for('main_page_redirect') }}"
+                style="color: rgb(214, 214, 214); text-decoration: none;">Izbor instrumenta</a>
+        </h2>
+    </div>
+
+
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/settings.js') }}"></script>
+</body>
+
+</html>
