@@ -5,7 +5,6 @@ import random
 import string
 
 
-# OK
 class RandomURLGenerator:
     def generate_url(self):
         """
@@ -17,7 +16,6 @@ class RandomURLGenerator:
         return url
 
 
-# OK
 class URLDatabaseManager:
     def __init__(self, user_identifier, pi_code) -> None:
         """
@@ -64,7 +62,6 @@ class URLDatabaseManager:
         return None
 
 
-# OK
 class DeleteURL:
     def __init__(self, url) -> None:
         self.conn = mysql_connect()
@@ -131,11 +128,3 @@ class DatabaseManager:
             print("An error occurred:", e)
         finally:
             connection.close()
-
-
-# print(URLDatabaseManager('jovicab@gmail.com', 'pi_1').read_duration_settings())
-# URLDatabaseManager('jovicab@gmail.com', 'pi_1').save_url() OK
-# DeleteURL('upitnik_w7heriuu').delete_url() OK
-
-# DatabaseManager('jovicab@gmail.com', 'pi_1').save_results([[5, 4, 2, 2, 4, 4, 4, 4, 4, 4, 3, 2, 3, 4, 4, 3, 4, 4, 3, 4], "upitnik"]) OK
-# print(DatabaseManager('jovicab@gmail.com', 'pi_1').read_results()
